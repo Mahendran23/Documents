@@ -1,0 +1,16 @@
+ .\bi.\bin\windows\kafka-server-start.bat .\config\server.properties 
+
+zookeeper-server-start.bat 
+
+.\bin.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+.\bin.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic javainuse-topic
+
+
+BOOTSTRAP_SERVERS_CONFIG: The Kafka broker's address. If Kafka is running in a cluster then you can provide comma (,) seperated addresses. For example: localhost:9091,localhost:9092.
+
+GROUP_ID_CONFIG: The consumer group id used to identify to which group this consumer belongs.
+
+KEY_DESERIALIZER_CLASS_CONFIG: The class name to deserialize the key object. We have used Long as the key so we will be using LongDeserializer as the deserializer class. You can create your custom deserializer by implementing the Deserializer interface provided by Kafka.
+
+VALUE_DESERIALIZER_CLASS_CONFIG: The class name to deserialize the value object. We have used String as the value so we will be using StringDeserializer as the deserializer class. You can create your custom deserializer. For example:
