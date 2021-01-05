@@ -1,0 +1,35 @@
+https://spring.io/guides/gs/maven/
+https://spring.io/guides/gs/maven/#scratch
+https://github.com/spring-guides/gs-maven
+https://mkyong.com/maven/how-to-create-a-java-project-with-maven/
+
+Factors Influcng Endmill Performance
+Experience
+
+
+export PATH=$PATH:$HOME/sonarqube-7.4/bin/macosx-universal-64
+set PATH=%PATH%;C:\COE\sonarqube\sonar-scanner-4.2.0.1873-windows\bin;
+
+
+mvn help:effective-settings
+
+ssh-keygen -t rsa -b 4096 -C "mahendran_raja2003@rediffmail.com"
+
+set PATH=%PATH%;C:\download\apache-maven-3.6.3\bin;
+
+
+https://github.com/SonarSource/sonar-custom-rules-examples.git
+
+git@github.com:SonarSource/sonar-custom-rules-examples.git
+
+git@github.com:user/repo.git
+
+
+The latest version of the plugin is available here. Now, we need to execute this command from the root of our project directory to scan it:
+
+mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 
+  -Dsonar.login=the-generated-token
+
+ mvn clean install sonar:sonar -DskipTests
+
+ https://blog.setapp.pl/sonarqube_introduction
